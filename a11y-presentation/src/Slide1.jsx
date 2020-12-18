@@ -1,7 +1,10 @@
+import React from 'react';
+
+import { Slide } from './components/Slide';
+import { SlideNavigator } from './components/SlideNavigator';
 
 const Slide1 = () => (
-  <div>
-    <h1>Accessability in practice</h1>
+  <Slide title="Accessability in practice" skipLinks={false}>
     <p>
       Welcome to this introduction to accessability in practice for developers.
       This session will cover some basics and some more advanced techniques for those fancy user experiences.
@@ -10,7 +13,8 @@ const Slide1 = () => (
     <p>
       Lets get into it!
     </p>
-  </div>
+    <SlideNavigator nextIndex={2} />
+  </Slide>
 );
 
 export default Slide1;
