@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Slide } from './components/Slide';
 import { SlideNavigator } from './components/SlideNavigator';
 import { ShowMore } from './components/ShowMore';
+import { Switch } from './components/Switch';
 
 
 const Slide8 = () => (
@@ -25,8 +26,12 @@ const Slide8 = () => (
         </p>
         <ShowMore ariaLive="polite" />
         <p>
-          When the dynamic content is read can be set using "polite" or "assertive". Assertive reads the content right away.
+          When the dynamic content is read by the screan reader can be decided using "polite" or "assertive". Assertive reads the content right away.
         </p>
+      </section>
+      <section>
+        <h3>Toggling stuff</h3>
+        <Switch />
       </section>
     </article>
     <SlideNavigator previousIndex={7} nextIndex={9} />

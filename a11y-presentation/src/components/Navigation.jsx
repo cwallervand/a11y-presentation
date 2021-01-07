@@ -18,7 +18,7 @@ const NavigationElements = styled.ul`
 export const Navigation = () => (
   <nav>
     <NavigationElements>
-      <li><Link to="/">Accessability in practice</Link></li>
+      <li><Link to="/slide1">Accessability in practice</Link></li>
       <li><Link to="/slide2">Navigation</Link></li>
       <li><Link to="/slide3">Navigation part 2</Link></li>
       <li><Link to="/slide4">Navigation part 3</Link></li>
