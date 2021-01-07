@@ -37,7 +37,7 @@ const SkipLink = styled.div`
 
 const MainContent = styled.main``;
 
-const SlideComponent = ({ title, skipLinks = true, bogusNavigation = false, children }) => {
+const SlideComponent = ({ title, skipLinks = true, children }) => {
   document.title = title;
   return (
     <SlideWrapper>
@@ -45,7 +45,7 @@ const SlideComponent = ({ title, skipLinks = true, bogusNavigation = false, chil
         {skipLinks && <SkipLink>
           <a href="#content">Go to main content</a>
         </SkipLink>}
-        <Navigation bogusNavigation={bogusNavigation} />
+        <Navigation />
         <h1>{title}</h1>
       </header>
 

@@ -15,36 +15,17 @@ const NavigationElements = styled.ul`
   }
 `;
 
-export const Navigation = ({
-  bogusNavigation
-}) => (
+export const Navigation = () => (
   <nav>
     <NavigationElements>
-      { bogusNavigation ? (
-          <>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-            <li><Link to="#">Some link!</Link></li>
-          </>
-        ) : (
-          <>
-            <li><Link to="/">Accessability in practice</Link></li>
-            <li><Link to="/slide2">Navigation</Link></li>
-            <li><Link to="/slide3">Navigation part 2</Link></li>
-            <li><Link to="/slide4">Navigation part 3</Link></li>
-            <li><Link to="/slide5">Semantics</Link></li>
-            <li><Link to="/slide6">Forms</Link></li>
-            <li><Link to="/slide7">Buttons</Link></li>
-          </>
-        )
-      }
+      <li><Link to="/">Accessability in practice</Link></li>
+      <li><Link to="/slide2">Navigation</Link></li>
+      <li><Link to="/slide3">Navigation part 2</Link></li>
+      <li><Link to="/slide4">Navigation part 3</Link></li>
+      <li><Link to="/slide5">Semantics</Link></li>
+      <li><Link to="/slide6">Forms</Link></li>
+      <li><Link to="/slide7">Buttons</Link></li>
+      <li><Link to="/slide8">Advanced user experiences</Link></li>
     </NavigationElements>
   </nav>
 );
