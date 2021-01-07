@@ -4,6 +4,8 @@ import Slide1 from './Slide1';
 import Slide2 from './Slide2';
 import Slide3 from './Slide3';
 import Slide4 from './Slide4';
+import Slide5 from './Slide5';
+import Slide6 from './Slide6';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Slide2 path="slide2" />
         <Slide3 path="slide3" />
         <Slide4 path="slide4" />
+        <Slide5 path="slide5" />
+        <Slide6 path="slide6" />
       </Router>
     </div>
   );

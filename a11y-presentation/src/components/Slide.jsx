@@ -35,20 +35,26 @@ const SkipLink = styled.div`
 
 `;
 
-const MainContent = styled.section``;
+const MainContent = styled.main``;
 
-const SlideComponent = ({ title, skipLinks = true, bogusNavigation = false, children }) => (
-  <SlideWrapper>
-    { skipLinks && <SkipLink>
-      <a href="#content">Go to main content</a>
-    </SkipLink>}
-    <Navigation bogusNavigation={bogusNavigation}/>
-    <h1>{title}</h1>
-    <MainContent id="content">
-      {children}
-    </MainContent>
-  </SlideWrapper>
-);
+const SlideComponent = ({ title, skipLinks = true, bogusNavigation = false, children }) => {
+  document.title = title;
+  return (
+    <SlideWrapper>
+      <header>
+        {skipLinks && <SkipLink>
+          <a href="#content">Go to main content</a>
+        </SkipLink>}
+        <Navigation bogusNavigation={bogusNavigation} />
+        <h1>{title}</h1>
+      </header>
+
+      <MainContent id="content">
+        {children}
+      </MainContent>
+    </SlideWrapper>
+  );
+}
 
 
 export const Slide = SlideComponent;
