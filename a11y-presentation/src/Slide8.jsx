@@ -4,6 +4,7 @@ import { Slide } from './components/Slide';
 import { SlideNavigator } from './components/SlideNavigator';
 import { ShowMore } from './components/ShowMore';
 import { Switch } from './components/Switch';
+import { AsyncOperation } from './components/AsyncOperation';
 
 
 const Slide8 = () => (
@@ -32,6 +33,15 @@ const Slide8 = () => (
       <section>
         <h3>Toggling stuff</h3>
         <Switch />
+      </section>
+      <section>
+        <h3>Handling async operations like network requests</h3>
+        <p>
+          Alot of the operations a customer executes are asyncronous; the user clicks on a button to transfer money from one account to another, a HTTP request is made to execute the transfer operation.
+          Meanwhile the customer waits and eventually receives and answer.
+          The result is then displayed to the user, like in the example below:
+        </p>
+        <AsyncOperation />
       </section>
     </article>
     <SlideNavigator previousIndex={7} nextIndex={9} />

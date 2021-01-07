@@ -11,13 +11,13 @@ const ToggleButton = styled.button`
 `;
 
 const OptionMarker = styled.span`
-    background-color: #FFF;
-    width: 50%;
-    position: relative;
-    height: 100%;
-    display: block;
-    border-radius: 15px;
-    margin-left: ${props => props.isOn ? '50%' : '0'}
+  background-color: #FFF;
+  width: 50%;
+  position: relative;
+  height: 100%;
+  display: block;
+  border-radius: 15px;
+  margin-left: ${props => props.isOn ? '50%' : '0'}
 `
 
 
@@ -26,7 +26,7 @@ export const Switch = () => {
 
   return (
     <>
-      <label htmlFor="notificationToggle" >Notify me when i run out of money</label>
+      <label htmlFor="notificationToggle">Notify me when i run out of money</label>
       <ToggleButton
         role="switch"
         aria-checked={isOn}
