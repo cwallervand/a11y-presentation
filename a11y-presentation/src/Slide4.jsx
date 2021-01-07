@@ -3,7 +3,7 @@ import { SlideNavigator } from './components/SlideNavigator';
 
 
 const Slide4 = () => (
-  <Slide title="Navigation continued" bogusNavigation>
+  <Slide title="Navigation continued">
     <p>
       <b>That is way better!</b>
     </p>
